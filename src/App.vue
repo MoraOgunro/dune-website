@@ -1,6 +1,7 @@
 <template>
   <div class="full-screen">
       <CardContainer></CardContainer>
+      <Footer></Footer>
   </div>
 </template>
 
@@ -30,9 +31,11 @@ body, html
   -moz-osx-font-smoothing: grayscale
   text-align: center
   color: #2c3e50
+  height: 100vh
 .full-screen
   width: 100vw
-  height: 100vh
+  height: 100%
   overflow-x: hidden
   overflow-y: hidden
+  position: relative
 </style>

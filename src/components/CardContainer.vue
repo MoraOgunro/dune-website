@@ -20,25 +20,23 @@ $tablet: 600px
 $medium-desktop: 768px
 $desktop: 992px
 $widescreen: 1200px
+/* Wrap cards in this */
 .card-container
+  margin-bottom: 1rem
   display: grid
   grid-template-columns: repeat(3, 30vw)
   grid-template-rows: 30vw
   column-gap: 2vw
-  padding: 0
+  width: 100%
   justify-content: space-evenly
   background-color: gray
 @media screen and (min-width: $widescreen)
   .card-container
-    width: auto
-    justify-content: space-evenly
-    padding: 0 10vw 0 10vw
-    margin: auto
-    grid-template-columns: repeat(3, max(30vh,300px))
-    grid-template-rows: max(30vh,300px)
+    grid-template-columns: repeat(3, max(30vh,250px))
+    grid-template-rows: max(30vh,250px)
 @media screen and (max-width: $tablet)
   .card-container
     row-gap: 2em
     grid-template-columns: 90vw
-    grid-template-rows: repeat(3, 30vh)
+    grid-template-rows: repeat(3, 20vh)
 </style>

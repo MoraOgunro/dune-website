@@ -15,7 +15,7 @@ $medium-desktop: 768px
 $desktop: 992px
 $widescreen: 1200px
 $curve: 25px
-
+/* Card styling */
 .card
   background-color: lightgreen
   border-radius: $curve

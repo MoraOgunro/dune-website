@@ -36,7 +36,9 @@ $widescreen: 1200px
     grid-template-rows: max(30vh,250px)
 @media screen and (max-width: $tablet)
   .card-container
-    row-gap: 2em
     grid-template-columns: 90vw
-    grid-template-rows: repeat(3, 20vh)
+    grid-template-rows: repeat(3, 25%)
+    height: 650px
+    align-content: space-evenly
+    justify-content: space-evenly
 </style>

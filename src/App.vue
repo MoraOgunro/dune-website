@@ -19,7 +19,6 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    //  Card
     CardContainer,
     Footer
   }
@@ -54,15 +53,18 @@ body, html
   display: flex
   flex-direction: column
   width: 100%
+/* Wrap full screem header content */
 .top
   flex-grow: 0
   flex-shrink: 1
-  flex-basis: 10vh
-  height: 10vh
+  height: 3rem
   width: 100%
   background-color: blue
+  min-height: 50px
+/* Wrap full screen middle content */
 .middle
   flex: 1
+  min-height: 150px
   width: 100%
   background-color: red
 /* Wrap footer content in this to get bottom allignment */
@@ -71,4 +73,9 @@ body, html
   width: 100%
   flex-shrink: 1
   flex-grow: 0
+@media screen and (max-width: $tablet)
+  .full-screen
+    overflow-y: auto
+    scrollbar-color: black white
+    scrollbar-width: thin
 </style>

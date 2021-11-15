@@ -6,9 +6,9 @@
     <div class="card-text-overlay">
 
       <div class="text-container">
-        <div class="card-header">Paul</div>
+        <div class="card-header">{{name}}</div>
         <div class="card-text">
-          Though he lacked companions his own age, he received tutelage from his teachers, men like Thufir Hawat, Duncan Idaho, Gurney Halleck
+          {{text}}
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  props: ['imageURL'],
+  props: ['imageURL', 'name', 'text'],
   data () {
     return {
     }
@@ -34,6 +34,7 @@ $widescreen: 1200px
 $curve: 25px
 /* Card styling */
 .card
+  box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.5)
   background-color: green
   border-radius: $curve
   overflow: hidden
@@ -42,7 +43,7 @@ $curve: 25px
     .card-text-overlay
       transform: translate3d(0, 0, 0)
     .text-container
-      transform: translate3d(0, 0, 0)
+      transform: translate3d(0, 2rem, 0)
 .card-text-overlay
   border-radius: $curve
   display: flex

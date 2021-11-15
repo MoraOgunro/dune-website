@@ -1,0 +1,19 @@
+{
+    "characters": [
+        {
+        "name":"Paul",
+        "text": "Though he lacked companions his own age, he received tutelage from his teachers, men like Thufir Hawat, Duncan Idaho, Gurney Halleck",
+        "url": "PAUL.png"
+        },
+        {
+        "name":"Chani",
+        "text": "Though he lacked companions his own age, he received tutelage from his teachers, men like Thufir Hawat, Duncan Idaho, Gurney Halleck",
+        "url": "CHANI.png"
+        },
+        {
+        "name":"Liet",
+        "text": "Though he lacked companions his own age, he received tutelage from his teachers, men like Thufir Hawat, Duncan Idaho, Gurney Halleck",
+        "url": "LIET.png"
+        }
+    ]
+}

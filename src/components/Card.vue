@@ -68,13 +68,19 @@ $curve: 25px
   display: flex
   flex-direction: column
 .card-header
-  font-size: 2rem
-  margin-top: 0.25rem
+  font-size: 1.75rem
+  margin-top: 0.4rem
   margin-bottom: 1rem
 .card-text
   color: black
 
 @media screen and (max-width: $tablet)
+  .card
+    &:hover
+      .card-text-overlay
+        transform: translate3d(0, 0, 0)
+      .text-container
+        transform: translate3d(0, 0, 0)
   .card-image
     object-position: top
 </style>
